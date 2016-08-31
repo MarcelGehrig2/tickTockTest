@@ -1,6 +1,6 @@
 #!/bin/bash
 
-. ./makeMPC.sh
+./makeMPC.sh
 
-. ./copyTickTockTest.sh
-. ./makeX86.sh
+./copyTickTockTest.sh
+./makeX86.sh
