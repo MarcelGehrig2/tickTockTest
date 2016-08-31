@@ -1,0 +1,71 @@
+[CMake]
+Build Directory Count=2
+Current Build Directory Index=0
+ProjectRootRelative=./
+
+[CMake][CMake Build Directory 0]
+Build Directory Path=file:///home/mgehrig2/projects/tickTockTest/buildMPC
+Build Type=Debug
+CMake Binary=file:///usr/bin/cmake
+Environment Profile=
+Extra Arguments=-DCMAKE_TOOLCHAIN_FILE=/home/mgehrig2/output/host/usr/share/buildroot/toolchainfile.cmake\s
+Install Directory=file:///usr/local
+
+[CMake][CMake Build Directory 1]
+Build Directory Path=file:///home/mgehrig2/projects/tickTockTest/buildX86
+Build Type=Debug
+CMake Binary=file:///usr/bin/cmake
+Environment Profile=
+Extra Arguments=
+Install Directory=file:///usr/local
+
+[Launch]
+Launch Configurations=Launch Configuration 0,Launch Configuration 1,Launch Configuration 2
+
+[Launch][Launch Configuration 0]
+Configured Launch Modes=execute
+Configured Launchers=scriptAppLauncher
+Name=copyTickTockTest2es105
+Type=Script Application
+
+[Launch][Launch Configuration 0][Data]
+Arguments=
+EnvironmentGroup=default
+Executable=file:///home/mgehrig2/projects/tickTockTest/scripts/copyTickTockTest.sh
+Execute on Remote Host=false
+Interpreter=bash
+Output Filtering Mode=0
+Remote Host=
+Working Directory=
+
+[Launch][Launch Configuration 1]
+Configured Launch Modes=execute
+Configured Launchers=scriptAppLauncher
+Name=makeTickTockTestX86
+Type=Script Application
+
+[Launch][Launch Configuration 1][Data]
+Arguments=
+EnvironmentGroup=default
+Executable=file:///home/mgehrig2/projects/tickTockTest/scripts/makeX86.sh
+Execute on Remote Host=false
+Interpreter=bash
+Output Filtering Mode=0
+Remote Host=
+Working Directory=
+
+[Launch][Launch Configuration 2]
+Configured Launch Modes=execute
+Configured Launchers=scriptAppLauncher
+Name=main
+Type=Script Application
+
+[Launch][Launch Configuration 2][Data]
+Arguments=
+EnvironmentGroup=default
+Executable=file:///home/mgehrig2/projects/tickTockTest/scripts/main.sh
+Execute on Remote Host=false
+Interpreter=bash
+Output Filtering Mode=0
+Remote Host=
+Working Directory=
