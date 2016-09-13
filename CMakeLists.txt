@@ -11,4 +11,8 @@ add_executable(ticktocktest
 	Statistics.cpp
 )
 
+target_link_libraries (ticktocktest
+	rt
+)
+
 install(TARGETS ticktocktest RUNTIME DESTINATION bin)
